@@ -142,6 +142,9 @@
 /obj/docking_port/stationary/mining_home/common/northstar
 	roundstart_template = /datum/map_template/shuttle/mining_common/northstar
 
+/obj/docking_port/stationary/mining_home/common/loop
+	roundstart_template = /datum/map_template/shuttle/mining_common/loop
+
 /**********************Mining car (Crate like thing, not the rail car)**************************/
 
 /obj/structure/closet/crate/miningcar

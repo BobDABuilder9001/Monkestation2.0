@@ -145,6 +145,9 @@
 	name = "\improper Chapel Funeral Room"
 	icon_state = "chapelfuneral"
 
+/area/station/service/chapel/hall
+	name = "\improper Chapel Hallway"
+
 /area/station/service/hydroponics/garden/monastery
 	name = "\improper Monastery Garden"
 	icon_state = "hydro"

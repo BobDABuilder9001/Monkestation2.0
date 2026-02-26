@@ -60,3 +60,7 @@
 /datum/map_template/shuttle/mining_common/northstar
 	suffix = "northstar"
 	name = "lavaland shuttle (North Star)"
+
+/datum/map_template/shuttle/mining_common/loop
+	suffix = "loop"
+	name = "public shuttle (Loop Station)"
