@@ -83,3 +83,7 @@
 /obj/item/paper/fluff/stations/boxstation/external_pa_wiring
 	name = "Subject: External PA Wiring"
 	default_raw_text = "<br>From: CentCom Engineering, Station Design Division<br><br>To: Station Engineers<br><br>The cables in the external Particle Accelerator and pre-built engine area are to NOT be hardwired to the station power grid.<br>Likewise, do NOT hardwire any part of this setup into itself.<br>The red cables FEED power to the external Engine and Main SMES units.<br>The yellow cables TRANSFER power to the machinery, with the exception of the ones beneath the collectors.<br>"
+
+/obj/item/paper/fluff/stations/loopstation/bridge_backhall_note
+	name = "TODO list"
+	default_raw_text = "<br>Fix the missing wood flooring<br><br>Reinforce the walls<br><br>Make some coffee<br>"

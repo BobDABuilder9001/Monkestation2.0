@@ -31,6 +31,10 @@
 	icon_state = "command"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
+/area/station/command/bridge_assistant_room
+	name = "\improper Bridge Assistant Room"
+	icon_state = "bridge"
+
 /*
 * Command Head Areas
 */

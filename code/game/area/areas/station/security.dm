@@ -51,6 +51,9 @@
 /area/station/security/courtroom/holding
 	name = "\improper Courtroom Prisoner Holding Room"
 
+/area/station/security/courtroom/jury
+	name = "\improper Courtroom Jury Room"
+
 /area/station/security/processing
 	name = "\improper Labor Shuttle Dock"
 	icon_state = "sec_labor_processing"
