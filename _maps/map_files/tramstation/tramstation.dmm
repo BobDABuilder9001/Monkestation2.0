@@ -3124,12 +3124,6 @@
 /turf/closed/wall,
 /area/station/maintenance/department/crew_quarters/dorms)
 "apD" = (
-/obj/structure/fluff{
-	desc = "What, you think the water just magically soaks into the metallic flooring?";
-	icon = 'icons/obj/lavaland/survival_pod.dmi';
-	icon_state = "fan_tiny";
-	name = "shower drain"
-	},
 /obj/machinery/duct,
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron/freezer,
@@ -7826,10 +7820,10 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/obj/structure/sign/clock/directional/north,
 /obj/machinery/camera/directional/north{
 	c_tag = "Command - Bridge North"
 	},
+/obj/machinery/incident_display/tram/directional/north,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "bsW" = (
@@ -9400,6 +9394,7 @@
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
 "bSd" = (
@@ -26783,13 +26778,9 @@
 "hpp" = (
 /obj/effect/turf_decal/box,
 /obj/machinery/shower/directional/east,
-/obj/structure/fluff{
-	desc = "Ew, I think I see a hairball.";
-	icon = 'icons/obj/lavaland/survival_pod.dmi';
-	icon_state = "fan_tiny";
-	name = "shower drain"
-	},
 /obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/structure/drain,
+/obj/structure/drain,
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "hpE" = (
@@ -28784,9 +28775,9 @@
 /obj/structure/cable,
 /mob/living/basic/pet/fox/renault,
 /obj/machinery/button/door/directional/south{
-	id = "aux_base_shutters";
+	id = "CapSec";
 	name = "Captain Security Shutters";
-	req_access = list("aux_base");
+	req_access = list("captain");
 	pixel_y = 20;
 	pixel_x = 22
 	},
@@ -29741,7 +29732,6 @@
 	pixel_x = -25;
 	pixel_y = -5
 	},
-/obj/machinery/atm/directional/north,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "int" = (
@@ -30747,14 +30737,10 @@
 /turf/open/floor/iron/textured_large,
 /area/station/security/execution/education)
 "iBp" = (
-/obj/effect/landmark/start/hangover,
-/obj/machinery/duct,
-/obj/structure/fluff{
-	desc = "What, you think the water just magically soaks into the metallic flooring?";
-	icon = 'icons/obj/lavaland/survival_pod.dmi';
-	icon_state = "fan_tiny";
-	name = "shower drain"
-	},
+/obj/structure/curtain,
+/obj/machinery/shower/directional/north,
+/obj/structure/drain,
+/obj/structure/drain,
 /turf/open/floor/iron/freezer,
 /area/station/commons/toilet)
 "iBx" = (
@@ -34988,9 +34974,6 @@
 /turf/open/floor/plating,
 /area/station/science/lab)
 "jRP" = (
-/obj/machinery/incident_display/tram{
-	pixel_x = -32
-	},
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/regular{
 	pixel_x = -5;
@@ -35000,6 +34983,7 @@
 	pixel_x = 8;
 	pixel_y = 4
 	},
+/obj/structure/fireaxecabinet/directional/west,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "jRS" = (
@@ -36793,7 +36777,6 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/obj/structure/fireaxecabinet/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -37479,6 +37462,9 @@
 	},
 /obj/machinery/light/directional/east,
 /obj/machinery/portable_atmospherics/canister/anesthetic_mix,
+/obj/machinery/incident_display/tram{
+	pixel_x = 32
+	},
 /turf/open/floor/iron/dark,
 /area/station/medical/treatment_center)
 "kFT" = (
@@ -41787,9 +41773,6 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 2
 	},
-/obj/machinery/incident_display/tram{
-	pixel_x = 32
-	},
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "lVK" = (
@@ -42622,14 +42605,9 @@
 /area/station/cargo/drone_bay)
 "mhY" = (
 /obj/effect/turf_decal/box,
-/obj/structure/fluff{
-	desc = "Ew, I think I see a hairball.";
-	icon = 'icons/obj/lavaland/survival_pod.dmi';
-	icon_state = "fan_tiny";
-	name = "shower drain"
-	},
 /obj/machinery/shower/directional/west,
 /obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/structure/drain,
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "miE" = (
@@ -44343,6 +44321,12 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /obj/machinery/requests_console/directional/south{
 	anon_tips_receiver = 1;
 	assistance_requestable = 1;
@@ -44351,12 +44335,6 @@
 	pixel_y = 30;
 	can_send_announcements = 1
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "mKP" = (
@@ -49337,10 +49315,15 @@
 /area/station/science/auxlab/firing_range)
 "onB" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/trimline/neutral/filled/line{
-	dir = 4
+/obj/effect/turf_decal/trimline/yellow/warning{
+	dir = 8
 	},
-/obj/structure/extinguisher_cabinet/directional/north,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/incident_display/tram{
+	desc = "A display that indicates how many dents that'll need fixed after the shift is over.";
+	name = "darwin award counter";
+	pixel_x = 32
+	},
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
 "ook" = (
@@ -49806,11 +49789,6 @@
 /obj/structure/table,
 /obj/item/storage/toolbox/emergency,
 /obj/item/crowbar,
-/obj/machinery/incident_display/tram{
-	desc = "A display that indicates how many dents that'll need fixed after the shift is over.";
-	name = "darwin award counter";
-	pixel_x = 32
-	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
@@ -52887,10 +52865,14 @@
 /turf/open/floor/carpet,
 /area/station/service/chapel/monastery)
 "pwx" = (
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/stripes/white/full,
+/obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/turf/open/floor/iron/white,
+/turf/open/floor/iron/dark,
 /area/station/medical/medbay/lobby)
 "pwF" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
@@ -53186,6 +53168,7 @@
 "pAv" = (
 /obj/structure/curtain,
 /obj/machinery/shower/directional/north,
+/obj/structure/drain,
 /turf/open/floor/iron/freezer,
 /area/station/commons/toilet)
 "pAA" = (
@@ -53634,7 +53617,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/access/all/engineering/general,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/construction,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/starboard/lesser)
 "pFp" = (
@@ -62846,10 +62830,6 @@
 	pixel_x = -2;
 	pixel_y = 6
 	},
-/obj/item/storage/box/silver_ids{
-	pixel_x = 5;
-	pixel_y = 3
-	},
 /obj/item/assembly/flash/handheld{
 	pixel_x = -8
 	},
@@ -65139,6 +65119,7 @@
 	name = "Secure Medical Storage";
 	req_access = list("medical")
 	},
+/obj/item/storage/toolbox/electrical/medical,
 /obj/item/clothing/glasses/blindfold,
 /obj/item/clothing/glasses/blindfold,
 /obj/item/clothing/ears/earmuffs,
@@ -65237,6 +65218,7 @@
 "thi" = (
 /obj/structure/curtain,
 /obj/machinery/shower/directional/south,
+/obj/structure/drain,
 /turf/open/floor/iron/freezer,
 /area/station/commons/toilet)
 "tho" = (
@@ -71407,6 +71389,7 @@
 /area/station/security/office)
 "uYR" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line,
+/obj/machinery/atm/directional/south,
 /turf/open/floor/iron/smooth,
 /area/station/hallway/primary/tram/center)
 "uYX" = (
@@ -75453,6 +75436,7 @@
 /obj/item/storage/box/beakers,
 /obj/item/clothing/neck/stethoscope,
 /obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/structure/drain,
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "whI" = (
@@ -94440,7 +94424,7 @@ hAD
 veV
 thi
 alR
-pAv
+iBp
 apC
 jXf
 yah
@@ -94942,7 +94926,7 @@ eCE
 lZP
 apC
 thi
-iBp
+alR
 vcp
 amr
 alT
@@ -101598,7 +101582,7 @@ pZW
 hWa
 agP
 oRH
-sUf
+onB
 sUf
 sUf
 aqf
@@ -101856,7 +101840,7 @@ hWa
 pZW
 pZW
 pZW
-onB
+uss
 uss
 xir
 uwf
@@ -178715,7 +178699,7 @@ aGO
 jJV
 mTM
 iVr
-wyd
+lDt
 inc
 xJA
 gHh
@@ -178973,7 +178957,7 @@ jJV
 mTM
 iVr
 rks
-pwx
+xck
 lNF
 wAI
 wAI
@@ -179229,7 +179213,7 @@ rZD
 jJV
 mTM
 jeW
-hNo
+pwx
 jop
 wcl
 xqY
@@ -180257,7 +180241,7 @@ rlO
 jJV
 syH
 fxs
-lDt
+uBA
 mJc
 kin
 juV
@@ -180514,7 +180498,7 @@ uGM
 dYS
 syH
 fxs
-uBA
+wyd
 wyd
 rks
 rks
@@ -181041,13 +181025,13 @@ jVw
 pnU
 sYU
 gNk
-gNk
+aNv
 gNk
 mFV
 gNk
 eqq
 tgU
-aNv
+gNk
 eSv
 wCn
 kGa
