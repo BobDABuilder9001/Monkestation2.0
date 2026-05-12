@@ -105,6 +105,9 @@
 /obj/structure/plaque/static_plaque/golden/commission/uterus
 	desc = "Spinward Sector Station SS-01\n'Uterus' Class Outpost\nCommissioned 03/09/2551\nDecommissioned 21/06/2552\n'Humanity's Vanguard'"
 
+// Loopstation: added NA, 2026 (#------ Not PRed yet)
+/obj/structure/plaque/static_plaque/golden/commission/loop
+	desc = "Spinward Sector Station SS-13\n'Loop' Class Outpost\nCommissioned --/--/2556\n'Progress Through Repetition'"
 // Other Stations
 
 // Space Station 13, Developer Class Outpost, Station Commissioned 30.12.2322, For the Glory of the Workers of the Third Soviet Union
