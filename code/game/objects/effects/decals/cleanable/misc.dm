@@ -138,12 +138,6 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2
 	icon_state = "cobweb2"
 
-/obj/effect/decal/cleanable/cobweb/cobweb3
-	icon_state = "cobweb3"
-
-/obj/effect/decal/cleanable/cobweb/cobweb4
-	icon_state = "cobweb4"
-
 /obj/effect/decal/cleanable/molten_object
 	name = "gooey grey mass"
 	desc = "It looks like a melted... something."
