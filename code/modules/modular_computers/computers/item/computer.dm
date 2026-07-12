@@ -106,9 +106,6 @@
 	/// Allow people with chunky fingers to use?
 	var/allow_chunky = FALSE
 
-	/// Monkestation Addition. Do we force ethernet connection.
-	var/ethernet_forced = FALSE
-
 	///The amount of paper currently stored in the PDA
 	var/stored_paper = 10
 	///The max amount of paper that can be held at once.
@@ -668,9 +665,6 @@
 	if(hardware_flag & PROGRAM_CONSOLE)
 		return NTNET_ETHERNET_SIGNAL
 
-	if(ethernet_forced) //Monkestation Addition - Add a check for forced ethernet
-		return NTNET_ETHERNET_SIGNAL
-
 	// NTNet is down and we are not connected via wired connection. No signal.
 	if(!find_functional_ntnet_relay())
 		return NTNET_NO_SIGNAL
@@ -854,13 +848,13 @@
 			return ITEM_INTERACT_SUCCESS
 
 	if(istype(tool, /obj/item/paper))
-		//MONKESTATION EDIT START
-		// Don't allow plastic cards (including the spare ID safe code biscuits!) to be inserted
+		var/obj/item/paper/attacking_paper = tool
 		if(istype(tool, /obj/item/paper/paperslip/corporate))
 			return ITEM_INTERACT_BLOCKING
-		//MONKESTATION EDIT END
 		if(stored_paper >= max_paper)
 			balloon_alert(user, "no more room!")
+			return ITEM_INTERACT_BLOCKING
+		if(!attacking_paper.is_empty() && tgui_alert(user, "\the [attacking_paper] has contents on it! Are you sure you want to recycle it?", "Recycling", list("Yes", "No")) != "Yes")
 			return ITEM_INTERACT_BLOCKING
 		if(!user.temporarilyRemoveItemFromInventory(tool))
 			return FALSE

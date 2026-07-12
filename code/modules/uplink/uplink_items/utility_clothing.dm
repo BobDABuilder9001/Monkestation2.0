@@ -81,7 +81,8 @@
 
 /datum/uplink_item/utility_clothing/modsuit/Wraith
 	name = "MODsuit wraith cloaking module"
-	desc = "A MODsuit module that grants to the user Optical camouflage and the ability to overload light sources to recharge suit power."
+	desc = "A MODsuit module that grants to the user Optical camouflage and the ability to overload light sources to recharge suit power. \
+		Incompatible with armored MODsuits."
 	item = /obj/item/mod/module/stealth/wraith
 	cost = 2
 
@@ -164,3 +165,10 @@
 	item = /obj/item/storage/backpack/duffelbag/syndie
 	cost = 1
 	surplus = 50
+
+/datum/uplink_item/utility_clothing/dimensional_gloves
+	name = "Black Dimensional Gloves"
+	desc = "A pair of sleak black gloves that functions as a weapon storage using bluespace compression technology. Holds up to six weapons."
+	item = /obj/item/clothing/gloves/color/black/dimensional
+	cost = 10
+	surplus = 30
